@@ -195,7 +195,7 @@ function mortgageNfees(principal, interestRate, years, propTax, insurance, hoaFe
     
     monthlyRate = Number(Math.round(monthlyRate+'e2')+'e-2');
 
-    return name + ", your monthly rate is $" + monthlyRate + "Monthly Property Taxes, Insurance, and HOA fees are $" + (propTax/12) + ", $" + (insurance/12) + ", $" + (hoaFees/12) + " totalling $" + (monthlyRate + (propTax/12) + (insurance/12) + (hoaFees/12));
+    return name + ", your monthly rate is $" + monthlyRate + ". Monthly Property Taxes, Insurance, and HOA fees are $" + (propTax/12) + ", $" + (insurance/12) + ", $" + (hoaFees/12) + " totalling $" + (monthlyRate + (propTax/12) + (insurance/12) + (hoaFees/12));
     
 }
 console.log("Stretch: Added in Property Taxes of $1020/year, Homeowner's Insurance of $600/year, and HOA fees of $1500/year below.");
