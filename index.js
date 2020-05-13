@@ -57,6 +57,8 @@ function mortgageCalculator() {
     let denominator = Math.pow((1 + monthlyInterestRate), periods) - 1;
     let monthlyRate = principal * numerator / denominator;
     
+    // Found the fully accurate Rounding method below at https://www.jacklmoore.com/notes/rounding-in-javascript/
+    // Using it in several other places throughout this project
     monthlyRate = Number(Math.round(monthlyRate+'e2')+'e-2');
 
     return name + ", your monthly rate is $" + monthlyRate;
